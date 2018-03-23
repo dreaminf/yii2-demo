@@ -17,11 +17,8 @@ use yii\widgets\ActiveForm;
             <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
             <?= $form->field($model, 'age')->textInput(['maxlength' => true]) ?>
-
             <?= $form->field($model, 'sex')->radioList(['1'=>'男','2'=>'女']) ?>
-
-            <?= $form->field($model, 'birthday')->textInput(['maxlength' => true]) ?>
-
+            <?= $form->field($model, 'birthday')->widget(\yii\jui\DatePicker::className(),[]) ?>
             <?= $form->field($model, 'holly')->radioList(['1'=>'阅读','2'=>'音乐','3'=>'运动']) ?>
 
             <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
