@@ -16,7 +16,7 @@ return [
           'urlManager' => [
               'enablePrettyUrl' => true, //开启url美化
               'showScriptName' => false, //不用输入入口文件index.php
-              'suffix'=>'.html',//开启伪静态
+//              'suffix'=>'.html',//开启伪静态
               'rules' => [
               ],
           ],
